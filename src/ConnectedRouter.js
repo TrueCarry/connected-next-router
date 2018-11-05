@@ -88,7 +88,7 @@ const createConnectedRouter = structure => {
       const { pathname: pathnameInStore, search: searchInStore, hash: hashInStore } = storeLocation
 
       // Extract Router's location
-      const historyLocation = locationFromUrl(Router.asPath)
+      const historyLocation = locationFromUrl(Router.pathname)
       const { pathname: pathnameInHistory, search: searchInHistory, hash: hashInHistory } = historyLocation
 
       // If we do time travelling, the location in store is changed but location in Router is not changed
